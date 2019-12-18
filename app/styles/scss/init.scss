@@ -71,7 +71,7 @@
 				width: 100%;
 				max-width: 584px;
 				margin-left: auto;
-				&--title {
+				&--title2 {
 					font-size: 72px;
 					font-weight: bold;
 					margin-bottom: 46px;
@@ -86,7 +86,7 @@
 					margin-bottom: 50px;
 				}
 			}
-			.btn {
+			.btn-new {
 				cursor: pointer;
 				display: inline-block;
 				background: linear-gradient(106.38deg, #FF7F08 -14.87%, #8800D6 116.66%);
@@ -342,7 +342,7 @@
 					width: 210px;
 					border: 3px solid #FF7F08;
 				}
-				.title {
+				.title2 {
 					font-size: 48px;
 					line-height: 69px;
 					text-transform: uppercase;
@@ -432,11 +432,12 @@
 				width: 100%;
 				max-width: 584px;
 				margin-left: auto;
-				.title {
+				.title2 {
 					text-transform: uppercase;
 					font-size: 48px;
 					text-align: right;
-					padding-top: 70px;
+					padding-top: 8px;
+					line-height: 1.4;
 					margin-bottom: 50px;
 				}
 				.body {
@@ -451,7 +452,7 @@
 					padding-right: 20px;
 					z-index: 100;
 					.note {
-						&--title {
+						&--title2 {
 							font-size: 36px;
 							color: #FF7F08;
 							margin-bottom: 28px;
@@ -475,7 +476,7 @@
 			position: relative;
 			min-height: 900px;
 			padding-top: 668px;
-			.btn {
+			.btn-new {
 				cursor: pointer;
 				display: inline-block;
 				width: 340px;
@@ -527,7 +528,7 @@
 		}
 	}
 	.block-5 {
-		&--title {
+		&--title2 {
 			text-align: center;
 			font-size: 48px;
 			line-height: 69px;
@@ -540,6 +541,11 @@
 			font-weight: 500;
 			font-size: 18px;
 			line-height: 27px;
+			@media all and (max-width: 640px) {
+				&.rev {
+					flex-direction: column-reverse;
+				}
+			}
 			&--left {
 				width: 50%;
 				border-right: 1px solid #BDBDBD;
@@ -636,7 +642,7 @@
 				position: relative;
 				z-index: 1;
 				min-height: 300px;
-				&--title {
+				&--title2 {
 					font-size: 36px;
 					line-height: 37px;
 					color: #FF7F08;
@@ -792,7 +798,7 @@
 					}
 				}
 			}
-			.btn {
+			.btn-new {
 				cursor: pointer;
 				display: inline-block;
 				width: 211px;
@@ -832,7 +838,7 @@
 			top: 36px;
     		right: -246px;
 		}
-		.title {
+		.title2 {
 			display: inline-block;
 			font-size: 48px;
 			line-height: 1;
@@ -906,7 +912,7 @@
 				}
 			}
 		}
-		.btn {
+		.btn-new {
 			cursor: pointer;
 			display: flex;
 			align-items: center;
@@ -1254,7 +1260,7 @@ html.remodal-is-locked {
 .remodal {
   font-size: 16px
 }
-.remodal-title {
+.remodal-title2 {
   font-size: 24px;
   font-weight: 400;
   font-style: normal;
@@ -1298,13 +1304,13 @@ html.remodal-is-locked {
   max-width: 320px!important;
   padding: 20px!important
 }
-[data-remodal-id=extendedSearch] .row-title {
+[data-remodal-id=extendedSearch] .row-title2 {
   font-weight: 700;
   display: block;
   margin-bottom: 5px;
   text-align: left
 }
-[data-remodal-id=extendedSearch] .row-title+label, [data-remodal-id=extendedSearch] .row-title+label+label {
+[data-remodal-id=extendedSearch] .row-title2+label, [data-remodal-id=extendedSearch] .row-title2+label+label {
   display: inline-block
 }
 
@@ -1312,7 +1318,7 @@ html.remodal-is-locked {
 
 .remodal-content {
 	font-family: 'Geometria';
-	.title {
+	.title2 {
 		font-weight: bold;
 		font-size: 24px;
 		margin-bottom: 20px;
@@ -1357,7 +1363,7 @@ html.remodal-is-locked {
 			}
 		}
 	}
-	.field-title {
+	.field-title2 {
 		font-weight: bold;
 		font-size: 15px;
 		margin-bottom: 6px;
@@ -1414,7 +1420,7 @@ html.remodal-is-locked {
 	.site-wrap .block-1--left .block-inner {
 		padding-left: 20px;
 	}
-	.site-wrap .block-1--left .block-inner--title {
+	.site-wrap .block-1--left .block-inner--title2 {
 	    font-size: 53px;
 	    font-weight: bold;
 	    margin-bottom: 35px;
@@ -1455,7 +1461,7 @@ html.remodal-is-locked {
 	.site-wrap .block-4--left {
 		padding-left: 20px;
 	}
-	.site-wrap .block-4--right .btn {
+	.site-wrap .block-4--right .btn-new {
 		width: 326px;
 	}
 	.site-wrap .block-4--left .block-inner .body {
@@ -1473,7 +1479,7 @@ html.remodal-is-locked {
 			background: url(../../images/swipe.svg) no-repeat center top;
 		}
 	}
-	.site-wrap .block-4--left .block-inner .body .note--title {
+	.site-wrap .block-4--left .block-inner .body .note--title2 {
 		font-size: 26px;
 	}
 	.site-wrap .block-6 .block-inner {
@@ -1515,7 +1521,7 @@ html.remodal-is-locked {
 	.site-wrap .block-7:after {
 		display: none;
 	}
-	.site-wrap .block-7 .title {
+	.site-wrap .block-7 .title2 {
 		font-size: 25px;
 		padding-left: 20px;
 	}
@@ -1531,7 +1537,7 @@ html.remodal-is-locked {
 	    line-height: 24px;
 	    padding-right: 20px;
 	}
-	.site-wrap .block-5 .block-cen .block-inner--title {
+	.site-wrap .block-5 .block-cen .block-inner--title2 {
 		font-size: 26px;
 		line-height: 30px;
 	}
@@ -1547,7 +1553,7 @@ html.remodal-is-locked {
 	.site-wrap .block-5 .block-cen .block-inner {
 		min-height: 100px;
 	}
-	.site-wrap .block-5--title {
+	.site-wrap .block-5--title2 {
 	    text-align: center;
 	    font-size: 21px;
 	    line-height: 27px;
@@ -1561,11 +1567,11 @@ html.remodal-is-locked {
 	.site-wrap .block-4 {
 		margin-bottom: 30px;
 	}
-	.site-wrap .block-4--right .btn {
+	.site-wrap .block-4--right .btn-new {
 		width: auto;
 		font-size: 17px;
 	}
-	.site-wrap .block-4--right .btn span {
+	.site-wrap .block-4--right .btn-new span {
 	    display: block;
 	    height: 49px;
 	    border-radius: 70px;
@@ -1573,7 +1579,7 @@ html.remodal-is-locked {
 	    position: relative;
 	    z-index: 10;
 	}
-	.site-wrap .block-4--right .btn:after {
+	.site-wrap .block-4--right .btn-new:after {
 		right: 9px;
 	}
 	.site-wrap .block-4--left .block-inner .body {
@@ -1595,14 +1601,14 @@ html.remodal-is-locked {
 	.site-wrap .block-4--left .block-inner .body:after {
 		display: none;
 	}
-	.site-wrap .block-4--left .block-inner .title {
+	.site-wrap .block-4--left .block-inner .title2 {
 	    text-transform: uppercase;
 	    font-size: 23px;
 	    text-align: center;
 	    padding-top: 0;
 	    margin-bottom: 15px;
 	}
-	.site-wrap .block-4--left .block-inner .body .note--title {
+	.site-wrap .block-4--left .block-inner .body .note--title2 {
 		font-size: 20px;
 		margin-bottom: 4px;
 	}
@@ -1620,7 +1626,7 @@ html.remodal-is-locked {
 	.site-wrap .block-7 {
 		padding-bottom: 20px;
 	}
-	.site-wrap .block-1--left .block-inner--title {
+	.site-wrap .block-1--left .block-inner--title2 {
 	    font-size: 44px;
 	    font-weight: bold;
 	    margin-bottom: 11px;
@@ -1628,13 +1634,13 @@ html.remodal-is-locked {
 	.site-wrap .block-1--left .block-inner--body {
 		margin-bottom: 26px;
 	}
-	.site-wrap .block-1--left .btn span {
+	.site-wrap .block-1--left .btn-new span {
 		width: auto;
 		font-size: 17px;
 		height: auto;
 		padding: 14px 44px 14px 20px;
 	}
-	.site-wrap .block-1--left .btn span:after {
+	.site-wrap .block-1--left .btn-new span:after {
 		right: 10px;
 	}
 	.site-wrap .block-1--right {
@@ -1732,7 +1738,7 @@ html.remodal-is-locked {
 	.site-wrap .block-3--left {
 		border-radius: 0;
 	}
-	.site-wrap .block-3--left .block-inner .title {
+	.site-wrap .block-3--left .block-inner .title2 {
 	    font-size: 33px;
 	    line-height: 42px;
 	    text-transform: uppercase;
